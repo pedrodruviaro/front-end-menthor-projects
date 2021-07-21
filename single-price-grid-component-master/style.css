@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+h2 {
+    font-size: 1.25em;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.15em;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.container {
+    padding: 1.5rem;
+}
+
+main {
+    height: 100vh;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.price-grid {
+    width: 325px;
+    max-width: 350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px,
+    rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.community {
+    background-color: white;
+}
+
+.community__title {
+    color: hsl(179, 62%, 43%);
+}
+
+.community__subtitle {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.community__text {
+    color: hsl(218, 22%, 67%);
+    font-size: .9em;
+}
+
+.subscription {
+    background-color:   hsl(179, 62%, 43%);
+    color: white;
+}
+
+.subscription__title {
+    padding-bottom: 1rem;
+}
+
+.subscription__price {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.subscription__price .time {
+    color: rgba(255, 255, 255, 0.589)
+}
+
+.subscription__price .value {
+    font-weight: 700;
+    font-size: 2em;
+    padding-right: .75rem;
+}
+
+.subscription__button {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    background-color: hsl(71, 73%, 54%);
+    display: block;
+    margin: 1.5rem auto 0 auto;
+    padding: .75rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px,
+                rgba(0, 0, 0, 0.24) 0px 3px 8px,
+                rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+
+.about {
+    background-color: hsl(179, 57%, 51%) ;
+    color: white;
+}
+
+.about__item {
+    padding: .15rem 0;
+    color: rgba(255, 255, 255, 0.918);
+}
+
+
+@media (min-width: 900px) {
+    .price-grid {
+        width: 650px;
+        max-width: 950px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "community community"
+                            "subscription about";
+    }
+
+    .community {
+        grid-area: community;
+    }
+
+    .subscription {
+        grid-area: subscription;
+    }
+
+    .about {
+        grid-area: about;
+    }
+}
+
+@media (min-width: 1400px) {
+    .price-grid {
+        width: 950px;
+        max-width: 950px;
+    }
+}

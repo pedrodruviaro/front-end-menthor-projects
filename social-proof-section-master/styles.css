@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main {
+    padding: 4rem 1.5rem;
+    background-color: white;
+}
+
+.title {
+    text-align: center;
+    padding: 0 2rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.description {
+    margin: 1.5rem 0 2rem;
+    text-align: center;
+    color: rgb(80, 80, 80);
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.cards__stars {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-review-stars {
+    border-radius: 8px;
+    background-color: hsl(300, 24%, 96%);
+    text-align: center;
+    padding: .75rem;
+    margin: .75rem auto;
+    max-width: 350px;
+    width: 300px;
+}
+
+.stars-container {
+    background-image: url(images/icon-star.svg);
+    background-repeat: space;
+    background-position: center;
+    height: 20px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+}
+
+.card-review-stars__description {
+    font-weight: 600;
+    color: hsl(300, 43%, 22%);
+}
+
+
+
+.cards {
+    margin: 3rem 0;
+}
+
+
+.card {
+    border-radius: 8px;
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    margin: 1.5rem auto;
+    max-width: 350px;
+    padding: 2rem;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card__person {
+    display: grid;
+    grid-template-areas: "img name"
+                "img description";
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+.card__person-image {
+    clip-path: circle();
+    grid-area: img;
+    width: 50px;
+    margin-right: 1.5rem;
+    height: auto;
+}
+
+.card__person-name {
+    font-weight: 600;
+    grid-area: name;
+}
+
+.card__person-description {
+    color: hsl(333, 80%, 67%);
+    grid-area: description;
+}
+
+.card__review {
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+
+@media (min-width: 1000px) {
+    main {
+        max-width: 1350px;
+        margin: 0 auto;
+        display: grid;
+        padding: 7%;
+        padding-top: 8rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "title stars"
+                            "reviews reviews";
+    }
+
+    .infos {
+        grid-area: title;
+        margin-left: 8px;
+        padding-right: 4rem;
+    }
+
+    .title {
+        text-align: left;
+        font-size: 2.75em;
+        padding: 0;
+    }
+
+    .description {
+        text-align: left;
+    }
+
+    .cards__stars {
+        grid-area: stars;
+        align-items: flex-end;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    .card-review-stars {
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        max-width: 375px;
+        width: 375px;
+        position: relative;
+        margin-right: 8px;
+    }
+
+    .card-review-stars:nth-child(1){
+        right: 100px;
+    }
+
+    .card-review-stars:nth-child(2){
+        right: 50px;
+    }
+
+    .stars-container {
+        margin: 0;
+    }
+
+
+    .cards {
+        grid-area: reviews;
+
+        max-width: 1200px;
+        width: 100%;
+        margin: 4rem auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .card {
+        margin: 0 .5rem;
+        position: relative;
+    }
+
+    .card:nth-child(2){
+        top: 20px;
+    }
+
+    .card:nth-child(3){
+        top: 40px;
+    }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fc-primary: hsl(257, 40%, 49%);
+    --fc-secondary: hsl(300, 69%, 71%);
+    --fc-white: #fdfdfd;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    font-family: var(--ff-poppins);
+    font-size: 1.75em;
+}
+
+p, span, a {
+    font-family: var(--ff-open-sans);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+.main {
+    background-color: var(--fc-primary);
+    background-image: url(images/bg-mobile.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--fc-white);
+    padding: 2rem;
+}
+
+.logo-container {
+    width: 150px;
+}
+
+.image-container {
+    margin: 4rem auto;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.info__subtitle {
+    padding: 2rem 0;
+    font-size: 1.03em;
+}
+
+.info__button {
+    color: var(--fc-primary);
+    background: var(--fc-white);
+    font-size: .9em;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+                rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.icon-container {
+    border: 1px solid var(--fc-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 1200px){
+    .main {
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        padding: 6%;
+        align-items: center;
+
+        grid-template-rows: 10vh 1fr 6vh;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-areas: "header header"
+                            "image info"
+                            "none footer"  ;
+    }
+
+    .logo-container {
+        grid-area: header;
+    }
+
+    .image-container{
+        grid-area: image;
+    }
+
+    .info {
+        grid-area: info;
+        padding: 2rem;
+        text-align: left;
+    }
+
+    .info__button {
+        text-align: center;
+        margin: 0;
+    }
+
+    .social {
+        grid-area: footer;
+    }
+}
+
+@media (min-width: 1500px){
+    .main {
+        grid-template-rows: 2vh 1fr 6vh;
+        width: 100vw;
+    }
+
+    .logo-container {
+        justify-self: center;
+        width: 200px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info__button {
+        margin: 0 auto;
+    }
+}

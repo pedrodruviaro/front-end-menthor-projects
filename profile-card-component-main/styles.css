@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hsl(185, 75%, 39%);
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    width: 325px;
+    max-width: 325px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px,
+                rgba(0, 0, 0, 0.35) 0px 5px 15px,
+                rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-header {
+    background: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+.img-holder {
+    border: 5px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: 2rem;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+}
+
+
+.card-body {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.name {
+    font-size: 1.15em;
+    font-weight: 700;
+    padding-right: .25rem;
+    color: hsl(229, 23%, 23%);
+}
+
+.age {
+    font-size: 1.15em;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+
+.city {
+    display: block;
+    font-size: .9em;
+    margin-top: .5rem;
+    color: hsl(227, 10%, 46%);
+}
+
+
+.card-footer {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 1.1em;
+    padding-bottom: .5rem;
+    color: hsl(229, 23%, 23%);
+}
+
+.text {
+    font-size: .8em;
+    color: hsl(227, 10%, 46%);
+}
+
+.c1, .c2 {
+    position: absolute;
+}
+
+.c1 {
+    top: -300px;
+    left: -300px;
+}
