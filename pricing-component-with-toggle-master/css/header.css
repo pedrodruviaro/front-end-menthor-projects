@@ -1,0 +1,25 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem;
+}
+
+.header__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr-3);
+}
+
+.header__button-wrap {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__span {
+    font-weight: 700;
+    color: var(--clr-2);
+    margin: 0 1rem;
+}

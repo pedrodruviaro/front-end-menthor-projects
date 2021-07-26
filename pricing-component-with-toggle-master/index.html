@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Pricing Component</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/switcher.css">
+  <link rel="stylesheet" href="css/cards.css">
+
+</head>
+
+<body >
+
+  <div class="background1"></div>
+  <div class="background2"></div>
+
+  <header id="header">
+    <h1 class="header__title">Our Pricing</h1>
+    
+    <div class="header__button-wrap">
+      <span class="header__span">Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <span class="header__span">Annually</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="cards">
+      <article class="card">
+        <h2 class="card__title">Basic</h2>
+        <h3 class="card__price">&dollar;19.99</h3>
+
+        <p class="card__info">500 GB Storage</p>
+        <p class="card__info">2 Users Allowed</p>
+        <p class="card__info">Send up to 3 GB</p>
+
+        <a href="" class="card__btn">Learn More</a>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">Professional</h2>
+        <h3 class="card__price">&dollar;24.99</h3>
+
+        <p class="card__info">1 TB Storage</p>
+        <p class="card__info">5 Users Allowed</p>
+        <p class="card__info">Send up to 10 GB</p>
+
+        <a href="" class="card__btn btn-midle">Learn More</a>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">Master</h2>
+        <h3 class="card__price">&dollar;39.99</h3>
+
+        <p class="card__info">2 TB Storage</p>
+        <p class="card__info">10 Users Allowed</p>
+        <p class="card__info">Send up to 20 GB</p>
+
+        <a href="" class="card__btn">Learn More</a>
+      </article>
+    </section>
+  </main>
+  <!--  
+  &dollar;199.99
+  &dollar;249.99
+  &dollar;399.99
+  -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

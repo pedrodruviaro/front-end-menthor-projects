@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="cards">
+      <article class="fylo">
+        <header class="logo-container">
+          <img src="images/logo.svg" alt="">
+        </header>
+        <div class="icons">
+          <div class="icon-container"><img src="images/icon-document.svg" alt="" class="icon"></img></div>
+          <div class="icon-container"><img src="images/icon-folder.svg" alt="" class="icon"></img></div>
+          <div class="icon-container"><img src="images/icon-upload.svg" alt="" class="icon"></img></div>
+        </div>
+      </article>
+
+      <article class="storage">
+        <p class="text">You’ve used <strong>815 GB</strong> of your storage</p>
+        <input type="range" min="0" max="1000" value="815">
+        <div class="min-max">
+          <span class="min">0 GB</span>
+          <span class="max">1000 GB</span>
+        </div>
+        <div class="remaining"><strong>185</strong> GB Left</div>
+      </article>
+    </section>
+  </main>
+
+</body>
+
+</html>
