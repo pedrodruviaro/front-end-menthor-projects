@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --clr-dark-blue: #2d314d;
+    --clr-lime-green: #31d35c;
+    --clr-bright-cyan: #2bb7da;
+    --clr-grayish-blue: #9698a6;
+    
+    --clrlight-gray-blue: #f3f4f6;
+    --clr-light-gray: #fafafa;
+    --clr-white: #ffffff;
+}
+
+* {
+    font-family: 'Public Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    color: var(--clr-dark-blue);
+}
+
+p {
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn {
+    display: block;
+    background: linear-gradient(to right, var(--clr-lime-green), var(--clr-bright-cyan));
+    color: var(--clr-white);
+    padding: 1rem 1.5rem;
+    width: fit-content;
+    text-align: center;
+    border-radius: 30px;
+    margin: 0 auto;
+    font-weight: 700;
+}

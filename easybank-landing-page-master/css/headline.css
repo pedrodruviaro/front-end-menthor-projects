@@ -1,0 +1,40 @@
+#headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.headline__banner-container {
+    height: 350px;
+    overflow: hidden;
+
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.headline__banner {
+    margin-top: -8em;
+}
+
+
+.headline__infos {
+    text-align: center;
+}
+
+.headline__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.headline__subtitle {
+    font-size: 1.1rem;
+    color: var(--clr-grayish-blue);
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
